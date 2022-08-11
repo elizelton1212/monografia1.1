@@ -13,4 +13,10 @@ class teste extends Controller
         # code...
         return view('teste');
     }
+
+    public function teste2()
+    {
+        # code...
+        return view('roque');
+    }
 }

@@ -1,244 +1,256 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="{{asset('css/admin.css')}}">
-<!------ Include the above in your HEAD tag ---------->
-
-
-        <!--===================
-        Header
-        =======================-->
-        <header class="header">
-          <nav class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand p-0 mr-5" href="#"><img src="http://via.placeholder.com/61x14"></a>
-            <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown messages-menu">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-bell-o"></i>
-                    <span class="label label-success bg-success">10</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <ul class="dropdown-menu-over list-unstyled">
-                      <li class="header-ul text-center">You have 4 messages</li>
-                      <li>
-                        <!-- inner menu: contains the actual data -->
-                        <ul class="menu list-unstyled">
-                          <li><!-- start message -->
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
-                            </div>
-                            <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <!-- end message -->
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item dropdown notifications-menu">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-warning bg-warning">10</span>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stellar Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./css/style1.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex align-items-center">
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="images/logo.svg" alt="logo" class="logo-dark" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome stallar dashboard!</h5>
+          <ul class="navbar-nav navbar-nav-right ml-auto">
+            <form class="search-form d-none d-md-block" action="#">
+              <i class="icon-magnifier"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-basket-loaded"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="icon-chart"></i></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator message-dropdown" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="icon-speech"></i>
+                <span class="count">7</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                  <span class="badge badge-pill badge-primary float-right">View all</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <ul class="dropdown-menu-over list-unstyled">
-                    <li class="header-ul text-center">You have 10 notifications</li>
-                    <li>
-                      <!-- inner menu: contains the actual data -->
-                      <ul class="menu list-unstyled">
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                            page and may cause design problems
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-red"></i> 5 new members joined
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-user text-red"></i> You changed your username
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="footer-ul text-center"><a href="#">View all</a></li>
-                  </ul>
-                </div>
-              </li>
-              
-              <li class="nav-item dropdown  user-menu">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="http://via.placeholder.com/160x160" class="user-image" alt="User Image" >
-                  <span class="hidden-xs">bootstrap develop</span>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                    <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                  </div>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <div class="main">
-      
-        <aside>
-          <div class="sidebar left ">
-            <div class="user-panel">
-              <div class="pull-left image">
-                <img src="http://via.placeholder.com/160x160" class="rounded-circle" alt="User Image">
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                    <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                    <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                  </div>
+                </a>
               </div>
-              <div class="pull-left info">
-                <p>Digital Support</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-              </div>
-            </div>
-            
-            <ul class="list-sidebar bg-defoult">
-              <li> <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Dashboards </span> <span class="fa fa-chevron-left pull-right"></span> </a>
-              <ul class="sub-menu collapse" id="dashboard">
-                <li class="active"><a href="#">CSS3 Animation</a></li>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Tabs & Accordions</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">FontAwesome</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Panels</a></li>
-                <li><a href="#">Widgets</a></li>
-                <li><a href="#">Bootstrap Model</a></li>
-              </ul>
             </li>
-            <li> <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a> </li>
-            <li> <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active" > <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span> <span class="fa fa-chevron-left pull-right"></span> </a>
-            <ul class="sub-menu collapse" id="products">
-              <li class="active"><a href="#">CSS3 Animation</a></li>
-              <li><a href="#">General</a></li>
-              <li><a href="#">Buttons</a></li>
-              <li><a href="#">Tabs & Accordions</a></li>
-              <li><a href="#">Typography</a></li>
-              <li><a href="#">FontAwesome</a></li>
-              <li><a href="#">Slider</a></li>
-              <li><a href="#">Panels</a></li>
-              <li><a href="#">Widgets</a></li>
-              <li><a href="#">Bootstrap Model</a></li>
-            </ul>
-          </li>
-          <li> <a href="#"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a> </li>
-          <li> <a href="#" data-toggle="collapse" data-target="#tables" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa fa-chevron-left pull-right"></span></a>
-          <ul  class="sub-menu collapse" id="tables" >
-            <li><a href=""> Static Tables</a></li>
-            <li><a href=""> Data Tables</a></li>
-            <li><a href=""> Foo Tables</a></li>
-            <li><a href=""> jqGrid</a></li>
+            <li class="nav-item dropdown language-dropdown d-none d-sm-flex align-items-center">
+              <a class="nav-link d-flex align-items-center dropdown-toggle" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="d-inline-flex mr-3">
+                  <i class="flag-icon flag-icon-us"></i>
+                </div>
+                <span class="profile-text font-weight-normal">English</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
+                <a class="dropdown-item">
+                  <i class="flag-icon flag-icon-us"></i> English </a>
+                <a class="dropdown-item">
+                  <i class="flag-icon flag-icon-fr"></i> French </a>
+                <a class="dropdown-item">
+                  <i class="flag-icon flag-icon-ae"></i> Arabic </a>
+                <a class="dropdown-item">
+                  <i class="flag-icon flag-icon-ru"></i> Russian </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
+              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle ml-2" src="images/faces/face8.jpg" alt="Profile image"> <span class="font-weight-normal"> Henry Klein </span></a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                  <p class="mb-1 mt-3">Allen Moreno</p>
+                  <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
+                </div>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-user text-primary"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-speech text-primary"></i> Messages</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-energy text-primary"></i> Activity</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-question text-primary"></i> FAQ</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i>Sign Out</a>
+              </div>
+            </li>
           </ul>
-        </li>
-        <li> <a href="#" data-toggle="collapse" data-target="#e-commerce" class="collapsed active" ><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa fa-chevron-left pull-right"></span></a>
-        <ul  class="sub-menu collapse" id="e-commerce" >
-          <li><a href=""> Products grid</a></li>
-          <li><a href=""> Products list</a></li>
-          <li><a href="">Product edit</a></li>
-          <li><a href=""> Product detail</a></li>
-          <li><a href="">Cart</a></li>
-          <li><a href=""> Orders</a></li>
-          <li><a href=""> Credit Card form</a> </li>
-        </ul>
-      </li>
-      <li> <a href=""><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span> </a></li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-    </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="profile-image">
+                  <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image">
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Allen Moreno</p>
+                  <p class="designation">Administrator</p>
+                </div>
+                <div class="icon-container">
+                  <i class="icon-bubbles"></i>
+                  <div class="dot-indicator bg-danger"></div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">Dashboard</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="icon-screen-desktop menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-category"><span class="nav-link">UI Elements</span></li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Basic UI Elements</span>
+                <i class="icon-layers menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/icons/simple-line-icons.html">
+                <span class="menu-title">Icons</span>
+                <i class="icon-globe menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forms/basic_elements.html">
+                <span class="menu-title">Form Elements</span>
+                <i class="icon-book-open menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts/chartist.html">
+                <span class="menu-title">Charts</span>
+                <i class="icon-chart menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Tables</span>
+                <i class="icon-grid menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-category"><span class="nav-link">Sample Pages</span></li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <span class="menu-title">General Pages</span>
+                <i class="icon-doc menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item pro-upgrade">
+              <span class="nav-link">
+                <a class="btn btn-block px-0 btn-rounded btn-upgrade" href="https://www.bootstrapdash.com/product/stellar-admin-template/" target="_blank"> <i class="icon-badge mx-2"></i> Upgrade to Pro</a>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row purchace-popup">
+              <div class="col-12 stretch-card grid-margin">
+                <div class="card card-secondary">
+
+                    @yield('conteudo')
+                </div></div></div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
     </div>
-    </aside>
-    </div>
-    
-  <script >
-    $(document).ready(function(){
-   $('.button-left').click(function(){
-       $('.sidebar').toggleClass('fliph');
-   });
-     
-});
-  </script>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="./vendors/chart.js/Chart.min.js"></script>
+    <script src="./vendors/moment/moment.min.js"></script>
+    <script src="./vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="./vendors/chartist/chartist.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="./js/dashboard1.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
