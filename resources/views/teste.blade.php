@@ -1,1 +1,5 @@
-@extends('layouts.master')
+@extends('layouts.admin')
+
+@section('conteudo')
+sdhjsdsjfdfdjfjdjf
+@stop
