@@ -27,7 +27,7 @@
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex align-items-center">
-          <a class="navbar-brand brand-logo" href="index.html">
+          <a class="navbar-brand brand-logo" href="{{url("/")}}">
             <img src="images/logo.svg" alt="logo" class="logo-dark" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
@@ -146,7 +146,7 @@
               <span class="nav-link">Dashboard</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url("/")}}">
+              <a class="nav-link" href="{{url("/teste")}}">
                 <span class="menu-title" >HOME</span>
                 <i class="icon-screen-desktop menu-icon"></i>
               </a>
