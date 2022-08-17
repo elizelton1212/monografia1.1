@@ -23,7 +23,11 @@
                 <td> {{(int) $cont =1}} </td>
                 <td>{{ $item -> nome }}</td>
                 <td></td>
-                <td></td>
+                <td><form action="{{route('categoria.apagar', $item ->id)}}" method="post">
+                  @csrf
+                  <input type="hidden" name="_method" value="DELETE">
+                  <button type="submit">Eliminar</button>  
+                </form></td>
               </tr> 
         @endforeach
             </tbody>

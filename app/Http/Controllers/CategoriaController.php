@@ -28,4 +28,14 @@ class CategoriaController extends Controller
 
         return redirect()->route('categoria.index');
     }
+
+    public function apagar($id)
+    {
+        if (!$categoria = Categoria::find($id)) {
+            return redirect()->route('categoria.index');
+        }
+        $categoria->delete();
+        return redirect()->route('categoria.index');
+
+    }
 }
