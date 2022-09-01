@@ -16,7 +16,7 @@ class CategoriaController extends Controller
 
     public function criar()
     {
-       
+
         return view('admin/categoria/novo');
     }
 
@@ -28,4 +28,11 @@ class CategoriaController extends Controller
 
         return redirect()->route('categoria.index');
     }
+
+        public function Categorias()
+        {
+            # code...
+            $categoria = Categoria::all();
+            return response()->json($categoria);
+        }
 }
