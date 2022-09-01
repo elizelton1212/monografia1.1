@@ -92,7 +92,7 @@
                 <a class="dropdown-item">
                   <i class="flag-icon flag-icon-us"></i> English </a>
                 <a class="dropdown-item">
-                  <i class="flag-icon flag-icon-fr"></i> French </a>
+                  <i class="flag-icon flag-icon-ao"></i> French </a>
                 <a class="dropdown-item">
                   <i class="flag-icon flag-icon-ae"></i> Arabic </a>
                 <a class="dropdown-item">
@@ -151,7 +151,7 @@
                 <i class="icon-screen-desktop menu-icon"></i>
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">LOCAL TURISTICO</span>
@@ -170,7 +170,7 @@
                 <i class="icon-globe menu-icon"></i>
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">UTILIZADORES</span>
@@ -185,11 +185,6 @@
                   <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
                 </ul>
               </div>
-            </li>
-            <li class="nav-item pro-upgrade">
-              <span class="nav-link">
-                <a class="btn btn-block px-0 btn-rounded btn-upgrade" href="https://www.bootstrapdash.com/product/stellar-admin-template/" target="_blank"> <i class="icon-badge mx-2"></i> Upgrade to Pro</a>
-              </span>
             </li>
           </ul>
         </nav>
@@ -207,8 +202,8 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Sistema de Gestão de Turismo Sistur 2022</span>
+              <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span> -->
             </div>
           </footer>
           <!-- partial -->

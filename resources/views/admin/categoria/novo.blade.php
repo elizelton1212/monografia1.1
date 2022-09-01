@@ -9,12 +9,11 @@
         <li>{{$erro}}</li>
         @endforeach
     </ul>
-        
     @endif
-    <form action="{{route('registar')}}" method="post">
+    <form action="" method="post">
         @csrf
-        Nome: <input type="text" name="nome">
+        Nome: <input type="text" name="nome" value="{{$categoria->nome}}">
         <input type="submit" value="REGISTAR">
-
     </form>
+
 @stop

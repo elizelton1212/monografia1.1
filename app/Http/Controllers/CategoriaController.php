@@ -10,13 +10,12 @@ class CategoriaController extends Controller
     public function index()
     {
         $Categoria = Categoria::get();
-        //dd($Categoria);
         return view('admin/categoria/categoria', compact('Categoria'));
     }
 
     public function criar()
     {
-       
+
         return view('admin/categoria/novo');
     }
 
@@ -37,5 +36,14 @@ class CategoriaController extends Controller
         $categoria->delete();
         return redirect()->route('categoria.index');
 
+    }
+
+    public function actualizar(validaCategoria $request, $id){
+
+      if (!$categoria = Categoria::find($id)) {
+        return redirect()->back();
+       }
+       $categoria->update($request->all());
+       return redirect()->back();
     }
 }

@@ -8,10 +8,10 @@ class teste extends Controller
 {
     //
 
-    public function teste()
+    public function admin()
     {
         # code...
-        return view('teste');
+        return view('admin');
     }
 
     public function teste2()

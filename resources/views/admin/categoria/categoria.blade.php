@@ -1,88 +1,120 @@
 @extends('layouts.admin')
 
 @section('conteudo')
-    <h1>CATEGORIAS</h1>
-       <button type="button" class="btn btn-inverse-primary btn-fw"><a href="{{url("/novo")}}">NOVO </a></button>
-      
     <div class="card-body">
+        <div style="align: right">
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#modelId">
+            Novo
+        </button>
+      </div>
+      <br>
         <h4 class="card-title">Categoria Registadas</h4>
         </p>
         <div class="table-responsive">
           <table class="table table-dark">
             <thead>
-              <tr>
-                <th> Nº DE ORDEM</th>
-                <th> NOME CATEGORIA</th>
-                <th>EDITAR</th>
-                <th>ELIMINAR</th>
+              <tr class="table-primary" style="color: blue;" >
+                <th><b >Nº DE ORDEM</b> </th>
+                <th> <b>NOME CATEGORIA</b></th>
+                <th><b>EDITAR</b></th>
+                <th><b>ELIMINAR</b></th>
               </tr>
             </thead>
             <tbody>
+                @php
+                    $cont = 0;
+                @endphp
         @foreach ($Categoria as $item)
-              <tr>
-                <td> {{(int) $cont =1}} </td>
-                <td>{{ $item -> nome }}</td>
-                <td></td>
+                @php
+                    $cont++;
+                @endphp
+                <tr>
+                <td> {{$cont}} </td>
+                <td>{{ $item ->nome }}</td>
+
+                <td>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#modelId1" id=""><i class="icon-pencil"></i></button>
+                    @php
+                        /*$nomes = array("A");
+                        array_push($nomes, "B");
+                        array_push($nomes, "C");*/
+                       @endphp
+
+                    <!-- Modal Editar-->
+            <div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" style="color: black">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title">Actualizar Categoria </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <form action="{{route('categoria.actualizar',$item->id)}}" method="post">
+                                        @csrf
+                                        @method('put');
+                                            <div class="modal-body">
+                                            <div class="container-fluid">
+                                            Nome: <input type="text" name="nome" id="" value="{{$item->nome}}">
+                                            </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: black">Cancelar</button>
+                                            <button type="submit" class="btn btn-primary" style="color: black">Salvar</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                        </form>
+
+                </td>
                 <td><form action="{{route('categoria.apagar', $item ->id)}}" method="post">
                   @csrf
                   <input type="hidden" name="_method" value="DELETE">
-                  <button type="submit">Eliminar</button>  
+                  <button type="submit" class="btn btn-danger"><i class="icon-trash"></i></button>
                 </form></td>
-              </tr> 
+              </tr>
         @endforeach
             </tbody>
           </table>
         </div>
       </div>
-     <!--
-      <div class="text-center">
-        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Click for demo<i class=" icon-arrow-right-circle ms-1"></i></button>
-      </div>
-    
-        
-        <!-- Dummy Modal Starts 
-        <div class="modal demo-modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success">Submit</button>
-                <button type="button" class="btn btn-light">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Dummy Modal Ends -->
-        <!-- Modal starts 
 
-        <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2" style="display: none;" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
+
+      <!-- Modal Criar Categoria-->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel-2">Modal title</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
+                  <h5 class="modal-title">Nova Categoria</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+ <form action="{{route('registar')}}" method="post">
+    @csrf
+            <div class="modal-body">
+              <div class="container-fluid">
+                Nome: <input type="text" name="nome">
               </div>
-              <div class="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success">Submit</button>
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: black">Cancelar</button>
+              <button type="submit" class="btn btn-primary" style="color: black">Salvar</button>
             </div>
           </div>
         </div>
-        <!-- Modal Ends 
-  
-    --> 
+      </div>
+</form>
+
+      <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+          var button = $(event.relatedTarget);
+          var modal = $(this);
+          // Use above variables to manipulate the DOM
+
+        });
+      </script>
+
 @stop

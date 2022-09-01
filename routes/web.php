@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::delete('/categoria/{id}',[App\Http\Controllers\CategoriaController::class,'apagar'])->name('categoria.apagar');;
+Route::put('/categoria/{id}',[App\Http\Controllers\CategoriaController::class,'actualizar'])->name('categoria.actualizar');
+Route::delete('/categoria/{id}',[App\Http\Controllers\CategoriaController::class,'apagar'])->name('categoria.apagar');
 Route::post('/novo',[App\Http\Controllers\CategoriaController::class, 'registar'])->name('registar');
-Route::get('/teste',[App\Http\Controllers\teste::class, 'teste']);
+Route::get('/admin',[App\Http\Controllers\teste::class, 'admin']);
 Route::get('/teste2', [App\Http\Controllers\teste::class, 'teste2']);
 Route::get('/novo',[App\Http\Controllers\CategoriaController::class,'criar'])->name('categoria.criar');
 Route::get('/categoria',[App\Http\Controllers\CategoriaController::class,'index'])->name('categoria.index');
