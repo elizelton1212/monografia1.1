@@ -11,17 +11,4 @@ class Categoria extends Model
     protected $table = 'categorias';
 
     protected $fillable = ['nome'];
-
-    public function consultarId($nome)
-    {
-        # code...
-        $w = $this->where('nome',$nome)->get();
-
-        foreach ($w as $p) {
-            # code...
-            return $p->id;
-
-        }
-
-    }
 }

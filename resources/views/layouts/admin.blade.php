@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Situr</title>
     <!-- plugins:css -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js" integrity="sha512-9rxMbTkN9JcgG5euudGbdIbhFZ7KGyAuVomdQDI9qXfPply9BJh0iqA7E/moLCatH2JD4xBGHwV6ezBkCpnjRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="{{ asset('vendors/simple-line-icons/css/simple-line-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendors/flag-icon-css/css/flag-icon.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendors/css/vendor.bundle.base.css') }}">
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <script src="{{ asset('js/app.js') }}"></script>
-
-    <link rel="stylesheet" href="{{ asset('vendors/daterangepicker/daterangepicker.css') }}">
+    <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -153,7 +151,7 @@
                 <i class="icon-screen-desktop menu-icon"></i>
               </a>
             </li>
-
+            
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">LOCAL TURISTICO</span>
@@ -172,7 +170,7 @@
                 <i class="icon-globe menu-icon"></i>
               </a>
             </li>
-
+            
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">UTILIZADORES</span>
@@ -216,21 +214,20 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>
+    <script src="vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
-    <script src="{{ asset('vendors/moment/moment.min.js') }}"></script>
-    <script src="{{ asset('vendors/daterangepicker/daterangepicker.js') }}"></script>
-    <script src="{{ asset('vendors/chartist/chartist.min.js') }}"></script>
+    <script src="./vendors/chart.js/Chart.min.js"></script>
+    <script src="./vendors/moment/moment.min.js"></script>
+    <script src="./vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="./vendors/chartist/chartist.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="{{ asset('js/off-canvas.js') }}"></script>
-    <script src="{{ asset('js/misc.js') }}"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/misc.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="{{ asset('js/dashboard1.js') }}"></script>
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="./js/dashboard1.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>

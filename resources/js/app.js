@@ -20,11 +20,6 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('cadastrar-provincia', require('./components/CadastrarProvincia.vue').default);
-Vue.component('cadastrar-municipio', require('./components/CadastrarMunicipio.vue').default);
-Vue.component('cadastrar-disticto', require('./components/CadastrarDistricto.vue').default);
-Vue.component('cadastrar-comuna', require('./components/CadastrarComuna.vue').default);
-Vue.component('cadastrar-local', require('./components/Local/CadastrarLocal.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
