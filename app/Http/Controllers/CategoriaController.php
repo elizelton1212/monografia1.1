@@ -28,6 +28,7 @@ class CategoriaController extends Controller
         return redirect()->route('categoria.index');
     }
 
+<<<<<<< HEAD
     public function apagar($id)
     {
         if (!$categoria = Categoria::find($id)) {
@@ -46,4 +47,12 @@ class CategoriaController extends Controller
        $categoria->update($request->all());
        return redirect()->back();
     }
+=======
+        public function Categorias()
+        {
+            # code...
+            $categoria = Categoria::all();
+            return response()->json($categoria);
+        }
+>>>>>>> 6d0ff7dff5384efe73ea11391527364f734b24b3
 }

@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categoria extends Model
+class Municipio extends Model
 {
     use HasFactory;
-    protected $table = 'categorias';
+    protected $fillable=['nome','provincia_id'];
 
-    protected $fillable = ['nome'];
 
     public function consultarId($nome)
     {
@@ -24,4 +23,19 @@ class Categoria extends Model
         }
 
     }
+
+    public function Districtos()
+    {
+        # code...
+    return $this->hasMany('App\Models\Distrito');
+
+    }
+
+    public function Comunas()
+    {
+        # code...
+    return $this->hasMany('App\Models\Comuna');
+
+    }
+
 }
