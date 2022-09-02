@@ -2,7 +2,7 @@
 
 <!DOCTYPE HTML>
 <html lang="pt">
-    
+
 <!-- Mirrored from townhub.kwst.net/rtl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Dec 2020 14:55:56 GMT -->
 <head>
         <!--=============== basic  ===============-->
@@ -12,7 +12,7 @@
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
-        <!--=============== css  ===============-->	
+        <!--=============== css  ===============-->
         <link type="text/css" rel="stylesheet" href="{{asset('css/reset.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('css/plugins.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -36,28 +36,28 @@
                 <!-- logo-->
                 <a href="{{url('/') }}" class="logo-holder"><img src="images/logo.png" alt=""></a>
                 <!-- logo end-->
-                <!-- header-search_btn-->         
+                <!-- header-search_btn-->
                 <div class="header-search_btn show-search-button"><i class="fal fa-search"></i><span>Search</span></div>
                 <!-- header-search_btn end-->
-                <!-- header opt --> 
+                <!-- header opt -->
                 <div class="show-reg-form modal-open avatar-img" data-srcav="images/avatar/3.jpg"><i class="fal fa-user"></i>Entrar</div>
-                <!-- header opt end--> 
+                <!-- header opt end-->
                 <!-- lang-wrap-->
-               
-                <!-- lang-wrap end-->                                 
-                <!-- nav-button-wrap--> 
-             
+
+                <!-- lang-wrap end-->
+                <!-- nav-button-wrap-->
+
                 <!-- nav-button-wrap end-->
-                <!--  navigation --> 
+                <!--  navigation -->
                 <div class="nav-holder main-menu">
                     <nav>
                         <ul class="no-list-style">
                             <li>
                                 <a href="#" class="act-link">Principal<i class="fa fa-caret-down"></i></a>
-                                <!--second level -->   
+                                <!--second level -->
                                 <ul>
                                     <li><a href="#">Parallax Image</a></li>
-                                   
+
                                 </ul>
                                 <!--second level end-->
                             </li>
@@ -66,7 +66,7 @@
                                 <!--second level -->
                                 <ul>
                                     <li><a href="listing.html">Column map</a></li>
-                                   
+
                                     <li>
                                         <a href="#">Single <i class="fa fa-caret-down"></i></a>
                                         <!--third  level  -->
@@ -86,36 +86,36 @@
                             </li>
                             <li>
                                 <a href="#">Pages <i class="fa fa-caret-down"></i></a>
-                                <!--second level -->   
+                                <!--second level -->
                                 <ul>
-                                  
+
                                     <li><a href="about.html">About</a></li>
-                                 
+
                                 </ul>
-                                <!--second level end-->                                
+                                <!--second level end-->
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <!-- navigation  end -->
-                <!-- header-search_container -->                     
+                <!-- header-search_container -->
                 <div class="header-search_container header-search vis-search">
                     <div class="container small-container">
                         <div class="header-search-input-wrap fl-wrap">
-                            <!-- header-search-input --> 
+                            <!-- header-search-input -->
                             <div class="header-search-input">
                                 <label><i class="fal fa-keyboard"></i></label>
-                                <input type="text" placeholder="What are you looking for ?"   value=""/>  
+                                <input type="text" placeholder="What are you looking for ?"   value=""/>
                             </div>
-                            <!-- header-search-input end -->  
-                            <!-- header-search-input --> 
+                            <!-- header-search-input end -->
+                            <!-- header-search-input -->
                             <div class="header-search-input location autocomplete-container">
                                 <label><i class="fal fa-map-marker"></i></label>
                                 <input type="text" placeholder="Location..." class="autocomplete-input" id="autocompleteid2" value=""/>
                                 <a href="#"><i class="fal fa-dot-circle"></i></a>
                             </div>
-                            <!-- header-search-input end -->                                        
-                            <!-- header-search-input --> 
+                            <!-- header-search-input end -->
+                            <!-- header-search-input -->
                             <div class="header-search-input header-search_selectinpt ">
                                 <select data-placeholder="Category" class="chosen-select no-radius" >
                                     <option>All Categories</option>
@@ -127,22 +127,22 @@
                                     <option>Events</option>
                                 </select>
                             </div>
-                            <!-- header-search-input end --> 
+                            <!-- header-search-input end -->
                             <button class="header-search-button green-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Search </button>
                         </div>
                         <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
                     </div>
                 </div>
-                <!-- header-search_container  end --> 
-                <!-- wishlist-wrap--> 
+                <!-- header-search_container  end -->
+                <!-- wishlist-wrap-->
                 <div class="header-modal novis_wishlist">
-                    <!-- header-modal-container--> 
+                    <!-- header-modal-container-->
                     <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar data-simplebar-direction='rtl'>
                         <!--widget-posts-->
                         <div class="widget-posts  fl-wrap">
                             <ul class="no-list-style">
                                 <li>
-                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>  
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>
                                     </div>
                                     <div class="widget-posts-descr">
                                         <h4><a href="listing-single.html">Iconic Cafe</a></h4>
@@ -189,13 +189,13 @@
                         </div>
                         <!-- widget-posts end-->
                     </div>
-                    <!-- header-modal-container end--> 
+                    <!-- header-modal-container end-->
                     <div class="header-modal-top fl-wrap">
                         <h4><span>Locations <strong></strong></span> : Your Wishlist</h4>
                         <div class="close-header-modal"><i class="far fa-times"></i></div>
                     </div>
                 </div>
-                <!--wishlist-wrap end --> 
+                <!--wishlist-wrap end -->
             </header>
             <!-- header end-->
             <!-- wrapper-->
@@ -222,11 +222,11 @@
                             <div class="main-search-input-tabs  tabs-act fl-wrap">
                                 <ul class="tabs-menu change_bg no-list-style">
                                     <li><a href="#tab-inpt4" data-bgtab="images/bg/hero/4.jpg"> Hoteis</a></li>
-                                    <li><a href="#tab-inpt3" data-bgtab="images/bg/hero/3.jpg"> Restaurantes</a></li>                                    
+                                    <li><a href="#tab-inpt3" data-bgtab="images/bg/hero/3.jpg"> Restaurantes</a></li>
                                     <li><a href="#tab-inpt2" data-bgtab="images/bg/hero/2.jpg"> Eventos</a></li>
-									<li class="current"><a href="#tab-inpt1" data-bgtab="images/bg/hero/1.jpg"> Lugares</a></li>                                    
+									<li class="current"><a href="#tab-inpt1" data-bgtab="images/bg/hero/1.jpg"> Lugares</a></li>
                                 </ul>
-                                <!--tabs -->                       
+                                <!--tabs -->
                                 <div class="tabs-container fl-wrap  ">
                                     <!--tab -->
                                     <div class="tab">
@@ -267,6 +267,7 @@
                                                         <label><i class="fal fa-handshake-alt"></i></label>
                                                         <input type="text" placeholder="Event Name or Place" value=""/>
                                                     </div>
+
                                                     <div class="main-search-input-item">
                                                         <select data-placeholder="Loaction" class="chosen-select on-radius" >
                                                             <option>All Cities</option>
@@ -290,7 +291,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--tab end-->                                
+                                    <!--tab end-->
                                     <!--tab -->
                                     <div class="tab">
                                         <div id="tab-inpt3" class="tab-content">
@@ -315,7 +316,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--tab end-->                                 
+                                    <!--tab end-->
                                     <!--tab -->
                                     <div class="tab">
                                         <div id="tab-inpt4" class="tab-content">
@@ -339,7 +340,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--tab end-->                                  
+                                    <!--tab end-->
                                 </div>
                                 <!--tabs end-->
                             </div>
@@ -356,7 +357,7 @@
                             </div>
                         </div>
                         <div class="header-sec-link">
-                            <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a> 
+                            <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a>
                         </div>
                     </section>
                     <!--section end-->
@@ -364,36 +365,36 @@
                     <!--section -->
                     <section   class="gray-bg hidden-section particles-wrapper">
                         <div class="container">
-                           
+
                             <div class="listing-item-grid_container fl-wrap">
                                 <div class="row">
-                                    @yield('conteudo')                                                                                           
+                                    @yield('conteudo')
                                 </div>
                             </div>
-                            
-                        </div>
-                                                
-                    </section>
-                    <!--  section  --> 
 
-          
+                        </div>
+
+                    </section>
+                    <!--  section  -->
+
+
                 </div>
                 <!--content end-->
             </div>
             <!-- wrapper end-->
             <!--footer -->
             <footer class="main-footer fl-wrap">
-            
+
                 <!--sub-footer-->
                 <div class="sub-footer  fl-wrap">
                     <div class="container">
                         <div class="copyright"> &#169; Todos Direitos Reservados A FCUAN</div>
-                                            
-                       
+
+
                 </div>
                 <!--sub-footer end -->
             </footer>
-            <!--footer end -->  
+            <!--footer end -->
             <!--map-modal -->
             <div class="map-modal-wrap">
                 <div class="map-modal-wrap-overlay"></div>
@@ -407,7 +408,7 @@
                     </div>
                 </div>
             </div>
-            <!--map-modal end -->                
+            <!--map-modal end -->
             <!--register form -->
             <div class="main-register-wrap modal">
                 <div class="reg-overlay"></div>
@@ -419,7 +420,7 @@
                             <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
                             <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
                         </ul>
-                        <!--tabs -->                       
+                        <!--tabs -->
                         <div class="tabs-container">
                             <div class="tab">
                                 <!--tab -->
@@ -486,15 +487,15 @@
                 </div>
             </div>
             <!--register form end -->
-            <a class="to-top"><i class="fas fa-caret-up"></i></a>     
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
         <script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/plugins.js')}}"></script>
         <script src="{{asset('js/scripts.js')}}"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;language=ar&amp;libraries=places&amp;callback=initAutocomplete"></script>  
-        <script src="{{asset('js/map-single.js')}}"></script>                          
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;language=ar&amp;libraries=places&amp;callback=initAutocomplete"></script>
+        <script src="{{asset('js/map-single.js')}}"></script>
     </body>
 
 <!-- Mirrored from townhub.kwst.net/rtl/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Dec 2020 15:15:00 GMT -->

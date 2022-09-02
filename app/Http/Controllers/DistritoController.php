@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comuna;
-use Illuminate\Http\Request;
+use App\Models\Distrito;
+use App\Models\Provincia;
 use App\Models\Municipio;
 
-class ComunaController extends Controller
+use Illuminate\Http\Request;
+
+
+class DistritoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +18,8 @@ class ComunaController extends Controller
      */
     public function index()
     {
-        //dfghdfghdfgh
-
-        return view('localiza.comuna.cadastrarcomuna');
+        //d
+        return view('localiza.districto.cadastrarDistricto');
     }
 
     /**
@@ -27,7 +29,7 @@ class ComunaController extends Controller
      */
     public function create()
     {
-        //d
+        //
     }
 
     /**
@@ -41,14 +43,14 @@ class ComunaController extends Controller
         //
         $municipio_id=$m->consultarId($request->municipio);
 
-        $insert = Comuna::create([
+        $insert = Distrito::create([
 
             'nome'=>$request->nome,
             'municipio_id'=>$municipio_id
         ]);
 
         if ($insert){
-            return response()->json('Comuna Cadastrada com sucesso');
+            return response()->json('Distrito Cadastrado com sucesso');
 
         }
 
@@ -57,21 +59,23 @@ class ComunaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Distrito  $distrito
      * @return \Illuminate\Http\Response
      */
-    public function show(Comuna $comuna)
+    public function show(Distrito $distrito)
     {
         //
+
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Distrito  $distrito
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comuna $comuna)
+    public function edit(Distrito $distrito)
     {
         //
     }
@@ -80,10 +84,10 @@ class ComunaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Distrito  $distrito
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comuna $comuna)
+    public function update(Request $request, Distrito $distrito)
     {
         //
     }
@@ -91,11 +95,22 @@ class ComunaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Distrito  $distrito
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comuna $comuna)
+    public function destroy(Distrito $distrito)
     {
         //
+    }
+
+    public function consultarMunicipios($provincia,Provincia $p)
+    {
+        # code...
+
+        $provincia_id= $p->consultarId($provincia);
+
+        $municipios=$p->find($provincia_id)->ProvinciaMunicipio;
+        return response()->json($municipios);
+
     }
 }

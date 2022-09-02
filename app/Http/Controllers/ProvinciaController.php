@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comuna;
+use App\Models\Provincia;
 use Illuminate\Http\Request;
-use App\Models\Municipio;
 
-class ComunaController extends Controller
+class ProvinciaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,8 @@ class ComunaController extends Controller
      */
     public function index()
     {
-        //dfghdfghdfgh
-
-        return view('localiza.comuna.cadastrarcomuna');
+        //d
+        return view('localiza.provincia.cadastrar');
     }
 
     /**
@@ -27,7 +25,7 @@ class ComunaController extends Controller
      */
     public function create()
     {
-        //d
+        //
     }
 
     /**
@@ -36,31 +34,28 @@ class ComunaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Municipio $m)
+    public function store(Request $request)
     {
         //
-        $municipio_id=$m->consultarId($request->municipio);
 
-        $insert = Comuna::create([
 
-            'nome'=>$request->nome,
-            'municipio_id'=>$municipio_id
+        $insert= Provincia::create([
+            'nome' => $request->nome
         ]);
 
         if ($insert){
-            return response()->json('Comuna Cadastrada com sucesso');
 
+            return response()->json('Dados Cadastrados com sucesso');
         }
-
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Provincia  $provincia
      * @return \Illuminate\Http\Response
      */
-    public function show(Comuna $comuna)
+    public function show(Provincia $provincia)
     {
         //
     }
@@ -68,10 +63,10 @@ class ComunaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Provincia  $provincia
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comuna $comuna)
+    public function edit(Provincia $provincia)
     {
         //
     }
@@ -80,10 +75,10 @@ class ComunaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Provincia  $provincia
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comuna $comuna)
+    public function update(Request $request, Provincia $provincia)
     {
         //
     }
@@ -91,11 +86,18 @@ class ComunaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Comuna  $comuna
+     * @param  \App\Models\Provincia  $provincia
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comuna $comuna)
+    public function destroy(Provincia $provincia)
     {
         //
+    }
+
+    public function provincias(Type $var = null)
+    {
+        $provincias = Provincia::all();
+
+        return response()->json($provincias);
     }
 }
