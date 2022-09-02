@@ -28,7 +28,7 @@ class CategoriaController extends Controller
 
         return redirect()->route('categoria.index');
     }
-
+//Esta funcao regista Categoria
         public function Categorias()
         {
             # code...
