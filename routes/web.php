@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('welcome2');
+});
 Route::post('/novo',[App\Http\Controllers\CategoriaController::class, 'registar'])->name('registar');
 Route::get('/teste',[App\Http\Controllers\teste::class, 'teste']);
 Route::get('/teste2', [App\Http\Controllers\teste::class, 'teste2']);
