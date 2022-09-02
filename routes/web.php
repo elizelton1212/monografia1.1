@@ -28,15 +28,6 @@ Route::get('/categoria',[App\Http\Controllers\CategoriaController::class,'index'
 
 Auth::routes();
 
-
-
-
-
-
-
-
-
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/cadastrar_provincia', [App\Http\Controllers\ProvinciaController::class, 'index']);
 Route::post('/cadastrar-provincia', [App\Http\Controllers\ProvinciaController::class, 'store']);
