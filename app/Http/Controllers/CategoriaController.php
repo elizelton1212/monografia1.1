@@ -35,4 +35,22 @@ class CategoriaController extends Controller
             $categoria = Categoria::all();
             return response()->json($categoria);
         }
+
+        public function apagar($id)
+        {
+            if (!$categoria = Categoria::find($id)) {
+                return redirect()->route('categoria.index');
+            }
+            $categoria->delete();
+            return redirect()->route('categoria.index');
+        }
+
+        public function actualizar(validaCategoria $request, $id){
+            if (!$categoria = Categoria::find($id)) {
+              return redirect()->back();
+             }
+             $categoria->update($request->all());
+             return redirect()->back();
+          }
+
 }
