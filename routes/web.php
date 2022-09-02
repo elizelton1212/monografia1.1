@@ -35,3 +35,18 @@ Route::get('/categoria',[App\Http\Controllers\categoriaController::class,'index'
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/cadastrar_provincia', [App\Http\Controllers\ProvinciaController::class, 'index']);
+Route::post('/cadastrar-provincia', [App\Http\Controllers\ProvinciaController::class, 'store']);
+Route::get('/cadastrar-municipio', [App\Http\Controllers\MunicipioController::class, 'index']);
+Route::get('/consultarProvincias', [App\Http\Controllers\ProvinciaController::class, 'provincias']);
+Route::post('/cadastrarMunicipio', [App\Http\Controllers\MunicipioController::class, 'store']);
+Route::get('/cadastrar-districto', [App\Http\Controllers\DistritoController::class, 'index']);
+Route::post('/provinciaMunicipios/{provincia}', [App\Http\Controllers\DistritoController::class, 'consultarMunicipios']);
+Route::post('/cadastrar_districto', [App\Http\Controllers\DistritoController::class, 'store']);
+Route::get('/cadastrar-comuna', [App\Http\Controllers\ComunaController::class, 'index']);
+Route::post('/cadastrar_comuna', [App\Http\Controllers\ComunaController::class, 'store']);
+Route::get('/cadastrar-local', [App\Http\Controllers\LocalController::class, 'index']);
+Route::get('/consultarDistritos/{id}', [App\Http\Controllers\MunicipioController::class, 'show']);
+Route::get('/consultarComunas/{id}', [App\Http\Controllers\MunicipioController::class, 'comunas']);
+Route::get('/categorias', [App\Http\Controllers\CategoriaController::class, 'categorias']);
+Route::post('/cadastrarLocal', [App\Http\Controllers\LocalController::class, 'store']);
