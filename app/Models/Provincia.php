@@ -11,7 +11,7 @@ class Provincia extends Model
 
     protected $t;
 
-
+//dd
     protected $fillable=['nome'];
 
     public function ProvinciaMunicipio()

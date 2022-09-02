@@ -12,7 +12,7 @@ class Comuna extends Model
     protected $fillable=['nome','municipio_id'];
     public function consultarId($nome)
     {
-        # code...
+        # code...dd
         $w = $this->where('nome',$nome)->get();
 
         foreach ($w as $p) {

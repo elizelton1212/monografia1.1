@@ -13,7 +13,7 @@ class Distrito extends Model
 
     public function consultarId($nome)
     {
-        # code...
+        # code...dd
         $w = $this->where('nome',$nome)->get();
 
         foreach ($w as $p) {

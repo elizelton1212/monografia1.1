@@ -3,6 +3,7 @@
 <h1>Cadastro de Districtos</h1>
 <strong>{{retorno}}</strong>
 <div class="form-group">
+<!-- fre -->
 
       <input v-model="nome" type="text" placeholder="Nome">
       <label for="">Provincia</label>

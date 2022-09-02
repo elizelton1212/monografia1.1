@@ -11,3 +11,4 @@ class Local extends Model
 
     protected $fillable =['nome','telefone','email','site','nif','categoria_id','localizacao_id','categoria_id'];
 }
+//dd

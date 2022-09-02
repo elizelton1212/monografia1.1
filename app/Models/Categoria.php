@@ -14,11 +14,11 @@ class Categoria extends Model
 
     public function consultarId($nome)
     {
-        # code...
+        # code...  d
         $w = $this->where('nome',$nome)->get();
 
         foreach ($w as $p) {
-            # code...
+            # code...gfgf
             return $p->id;
 
         }

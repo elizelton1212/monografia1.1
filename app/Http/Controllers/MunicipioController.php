@@ -16,7 +16,7 @@ class MunicipioController extends Controller
      */
     public function index()
     {
-        //
+        //d
 
         return view('localiza.municipio.municipio');
     }

@@ -22,7 +22,7 @@ class LocalController extends Controller
      */
     public function index()
     {
-        //
+        //d
         return view('Local.index');
     }
 

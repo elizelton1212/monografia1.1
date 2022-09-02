@@ -20,7 +20,7 @@ class Localizacao extends Model
 
     ];
 
-
+//dd
     public function Provincia()
     {
         return $this->hasOne('App\Models\Provincia');

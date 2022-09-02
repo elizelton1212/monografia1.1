@@ -5,6 +5,7 @@
 <cadastrar-disticto></cadastrar-disticto>
 
 
+<!-- fre -->
 
 </div>
 <script src="{{ asset('js/app.js') }}"></script>

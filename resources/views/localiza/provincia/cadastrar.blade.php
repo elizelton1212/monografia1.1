@@ -4,6 +4,7 @@
 <div id="app">
 <cadastrar-provincia></cadastrar-provincia>
 
+<!-- fre -->
 
 
 </div>

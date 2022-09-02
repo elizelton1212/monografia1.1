@@ -17,7 +17,7 @@ class LocalizacaoController extends Controller
      */
     public function index()
     {
-        //
+        //d
     }
 
     /**

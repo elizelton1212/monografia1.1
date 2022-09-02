@@ -18,7 +18,7 @@ class DistritoController extends Controller
      */
     public function index()
     {
-        //
+        //d
         return view('localiza.districto.cadastrarDistricto');
     }
 

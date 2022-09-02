@@ -11,6 +11,7 @@
 </select>
       <button class="btn btn-primary" @click.prevent='cadastrarMunicipio' >Cadastrar</button>
 </div>
+<!-- fre -->
 
 </form>
 

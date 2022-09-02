@@ -23,7 +23,7 @@ class Municipio extends Model
         }
 
     }
-
+//dd
     public function Districtos()
     {
         # code...

@@ -14,7 +14,7 @@ class ProvinciaController extends Controller
      */
     public function index()
     {
-        //
+        //d
         return view('localiza.provincia.cadastrar');
     }
 
