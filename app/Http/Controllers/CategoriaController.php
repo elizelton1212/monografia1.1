@@ -20,6 +20,7 @@ class CategoriaController extends Controller
         return view('admin/categoria/novo');
     }
 
+        //Essa funcão e responsavel por registar
     public function registar(validaCategoria $request)
     {
         Categoria::create([
