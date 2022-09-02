@@ -15,7 +15,7 @@ class ComunaController extends Controller
      */
     public function index()
     {
-        //
+        //dfghdfghdfgh
 
         return view('localiza.comuna.cadastrarcomuna');
     }
