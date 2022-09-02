@@ -8,7 +8,7 @@ class CreateLocalizacaosTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *dfdfd
      * @return void
      */
     public function up()

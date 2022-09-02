@@ -8,7 +8,7 @@ class CreateComunasTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *dffdf
      * @return void
      */
     public function up()

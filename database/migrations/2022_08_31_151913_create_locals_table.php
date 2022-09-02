@@ -8,7 +8,7 @@ class CreateLocalsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *fdfdffd
      * @return void
      */
     public function up()

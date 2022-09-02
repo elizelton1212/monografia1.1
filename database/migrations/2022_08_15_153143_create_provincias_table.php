@@ -8,7 +8,7 @@ class CreateProvinciasTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *fdfd
      * @return void
      */
     public function up()

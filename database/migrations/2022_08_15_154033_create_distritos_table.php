@@ -8,7 +8,7 @@ class CreateDistritosTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *dffd
      * @return void
      */
     public function up()
