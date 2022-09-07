@@ -30,7 +30,7 @@ Route::get('/teste',[App\Http\Controllers\teste::class, 'teste']);
 
 Route::get('/teste2', [App\Http\Controllers\teste::class, 'teste2']);
 Route::get('/novo',[App\Http\Controllers\categoriaController::class,'criar'])->name('categoria.criar');
-Route::get('/categoria',[App\Http\Controllers\categoriaController::class,'index'])->name('categoria.index');
+Route::get('/categoria',[App\Http\Controllers\CategoriaController::class,'index'])->name('categoria.index');
 
 Auth::routes();
 
