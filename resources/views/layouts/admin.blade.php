@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Situr</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ asset('vendors/simple-line-icons/css/simple-line-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/css/vendor.bundle.base.css') }}">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
+    <link rel="stylesheet" href="{{ asset('vendors/daterangepicker/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendors/chartist/chartist.min.css') }}">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
   </head>
   <body>
     <div class="container-scroller">
@@ -54,7 +54,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                    <img src="{{ asset('images/faces/face10.jpg') }}" alt="image" class="img-sm profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
@@ -104,7 +104,7 @@
                 <img class="img-xs rounded-circle ml-2" src="images/faces/user.png" alt="Profile image"> <span class="font-weight-normal"> Utilizador </span></a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="images/faces/user.png" alt="Profile image">
+                  <img class="img-md rounded-circle" src="{{ asset('images/faces/user.png') }}" alt="Profile image">
                   <p class="mb-1 mt-3">Utilizador</p>
                   <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
                 </div>
@@ -129,7 +129,7 @@
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
                 <div class="profile-image">
-                  <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image">
+                  <img class="img-xs rounded-circle" src="{{ asset('images/faces/face8.jpg') }}" alt="profile image">
                   <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
@@ -238,20 +238,20 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="./vendors/chart.js/Chart.min.js"></script>
-    <script src="./vendors/moment/moment.min.js"></script>
-    <script src="./vendors/daterangepicker/daterangepicker.js"></script>
-    <script src="./vendors/chartist/chartist.min.js"></script>
+    <script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('vendors/moment/moment.min.js') }}"></script>
+    <script src="{{ asset('vendors/daterangepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('vendors/chartist/chartist.min.js') }}"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="js/off-canvas.js"></script>
-    <script src="js/misc.js"></script>
+    <script src="{{ asset('js/off-canvas.js') }}"></script>
+    <script src="{{ asset('js/misc.js') }}"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="./js/dashboard1.js"></script>
+    <script src="{{ asset('js/dashboard1.js') }}"></script>
     <!-- End custom js for this page -->
   </body>
 </html>
