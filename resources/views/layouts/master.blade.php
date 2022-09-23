@@ -46,11 +46,7 @@
 
                 <!-- lang-wrap end-->
                 <!-- nav-button-wrap-->
-                <div class="nav-button-wrap color-bg">
-                    <div class="nav-button">
-                        <span></span><span></span><span></span>
-                    </div>
-                </div>
+
                 <!-- nav-button-wrap end-->
                 <!--  navigation -->
                 <div class="nav-holder main-menu">

@@ -28,12 +28,12 @@
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex align-items-center">
           <a class="navbar-brand brand-logo" href="{{url("/")}}">
-            <img src="images/logo.png" alt="">
-        </a>
+            <img src="images/logo.svg" alt="logo" class="logo-dark" />
+          </a>
           <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">BEM VINDO AO PAINEL GESTOR DO SITUR</h5>
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">BEM VINDO AO NOSSO SISTEMA</h5>
           <ul class="navbar-nav navbar-nav-right ml-auto">
             <form class="search-form d-none d-md-block" action="#">
               <i class="icon-magnifier"></i>
@@ -146,55 +146,31 @@
               <span class="nav-link">Dashboard</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url("/admin")}}">
-                <span class="menu-title" >Principal</span>
-                <i class="icon-home menu-icon"></i>
+              <a class="nav-link" href="{{url("/teste")}}">
+                <span class="menu-title" >HOME</span>
+                <i class="icon-screen-desktop menu-icon"></i>
               </a>
             </li>
-
+            
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">GERIR CATEGÓRIA</span>
-                <i class="icon-wallet menu-icon"></i>
+                <span class="menu-title">LOCAL TURISTICO</span>
+                <i class="icon-layers menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{{url("/categoria")}}">Cadastrar</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#">Editar</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{{url("/categoria")}}">GERIR CATEGORIA</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">GERIR LOCAL</a></li>
                 </ul>
               </div>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#ui-local" aria-expanded="false" aria-controls="ui-basic">
-                  <span class="menu-title">GERIR LOCAL</span>
-                  <i class="icon-plane menu-icon"></i>
-                </a>
-                <div class="collapse" id="ui-local">
-                  <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{ url('/cadastrar-local') }}">Cadastrar</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Editar</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Eliminar</a></li>
-
-                  </ul>
-                </div>
-              </li>
-
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#ui-localizacao" aria-expanded="false" aria-controls="ui-basic">
-                    <span class="menu-title">GERIR LOCALIZAÇÃO</span>
-                    <i class="icon-pin menu-icon"></i>
-                  </a>
-              <div class="collapse" id="ui-localizacao">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{{url("cadastrar_provincia")}}">CADASTRAR PROVINCIA </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{{ url('cadastrar-municipio') }}">CADASTRAR MUNICIPIO</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{{ url('cadastrar-districto') }}">CADASTRAR DISTRITO</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="{{ url('cadastrar-comuna') }}">CADASTRAR COMUNA</a></li>
-                </ul>
-              </div>
+              <a class="nav-link" href="pages/icons/simple-line-icons.html">
+                <span class="menu-title">Icons</span>
+                <i class="icon-globe menu-icon"></i>
+              </a>
             </li>
-
+            
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">UTILIZADORES</span>
