@@ -6559,7 +6559,11 @@ Vue.component('cadastrar-disticto', (__webpack_require__(/*! ./components/Cadast
 Vue.component('cadastrar-comuna', (__webpack_require__(/*! ./components/CadastrarComuna.vue */ "./resources/js/components/CadastrarComuna.vue")["default"]));
 Vue.component('cadastrar-local', (__webpack_require__(/*! ./components/Local/CadastrarLocal.vue */ "./resources/js/components/Local/CadastrarLocal.vue")["default"]));
 Vue.component('example-componente', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+<<<<<<< Updated upstream
 Vue.component('seila', (__webpack_require__(/*! ./components/texte.vue */ "./resources/js/components/texte.vue")["default"]));
+=======
+Vue.component('seila', Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/texte.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+>>>>>>> Stashed changes
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
