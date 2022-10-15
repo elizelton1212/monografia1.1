@@ -26,6 +26,20 @@ class LocalController extends Controller
         return view('Local.index');
     }
 
+    //Função para retornar todos os Locais Registados
+    public function listar()
+    {
+        $locais = Local::all();
+
+        //return view('admin/categoria/categoria', compact('Categoria'));
+        return response()->json($locais);
+    }
+
+    public function ret_Provincia($id)
+    {
+        $categoria = Categoria::find($id)->CategoriaLocal;
+        return response()->json($categoria);
+    }
     /**
      * Show the form for creating a new resource.
      *

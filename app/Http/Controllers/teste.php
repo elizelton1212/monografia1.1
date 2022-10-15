@@ -19,4 +19,8 @@ class teste extends Controller
         # code...
         return view('roque');
     }
+    public function texteVue()
+    {
+        return "Ola Ferdinando Roque MM";
+    }
 }

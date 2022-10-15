@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('conteudo')
-    
+
  <!--section  -->
  <section>
     <div class="container big-container">
         <div class="section-title">
-            <h2><span>Most Popular Palces</span></h2>
+            <h2><span>Actividades a Participar</span></h2>
             <div class="section-subtitle">Best Listings</div>
             <span class="section-separator"></span>
             <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus tellus ut, convallis eros sollicitudin turpis.</p>
@@ -15,7 +15,7 @@
             <a href="#" class="gallery-filter" data-filter=".hotels">Hotels</a>
             <a href="#" class="gallery-filter" data-filter=".events">Events</a>
             <a href="#" class="gallery-filter" data-filter=".fitness">Fitness</a>
-            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All Categories</a>                                
+            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All Categories</a>
         </div>
         <div class="grid-item-holder gallery-items fl-wrap">
             <!--  gallery-item-->
@@ -26,7 +26,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/1.jpg" alt=""> 
+                            <img src="images/all/1.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
@@ -89,7 +89,7 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                              
+                <!-- listing-item end -->
             </div>
             <!-- gallery-item  end-->
             <!--  gallery-item-->
@@ -100,7 +100,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/9.jpg" alt=""> 
+                            <img src="images/all/9.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/2.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
@@ -110,7 +110,7 @@
                                 <div class="listing-rating-count-wrap">
                                     <div class="review-score">4.2</div>
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
-                                    <br>                                                
+                                    <br>
                                     <div class="reviews-count">6 reviews</div>
                                 </div>
                             </div>
@@ -163,9 +163,9 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->  
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end-->         
+            <!-- gallery-item  end-->
             <!-- gallery-item  -->
             <div class="gallery-item fitness">
                 <!-- listing-item  -->
@@ -174,7 +174,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/31.jpg" alt=""> 
+                            <img src="images/all/31.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/4.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
@@ -237,9 +237,9 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                   
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end-->  
+            <!-- gallery-item  end-->
             <!-- gallery-item  -->
             <div class="gallery-item hotels">
                 <!-- listing-item  -->
@@ -248,7 +248,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/16.jpg" alt=""> 
+                            <img src="images/all/16.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/3.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
@@ -258,7 +258,7 @@
                                 <div class="listing-rating-count-wrap">
                                     <div class="review-score">5.0</div>
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
-                                    <br>                                                
+                                    <br>
                                     <div class="reviews-count">4 reviews</div>
                                 </div>
                             </div>
@@ -311,9 +311,9 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                                            
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end-->                                  
+            <!-- gallery-item  end-->
             <!-- gallery-item  -->
             <div class="gallery-item hotels">
                 <!-- listing-item  -->
@@ -322,7 +322,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/28.jpg" alt=""> 
+                            <img src="images/all/28.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
@@ -385,9 +385,9 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                           
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end-->                                 
+            <!-- gallery-item  end-->
             <!-- gallery-item  -->
             <div class="gallery-item  restaurant hotels">
                 <!-- listing-item  -->
@@ -396,7 +396,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/18.jpg" alt=""> 
+                            <img src="images/all/18.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
@@ -459,7 +459,7 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                                        
+                <!-- listing-item end -->
             </div>
             <!-- gallery-item  end-->
             <!-- gallery-item  -->
@@ -470,7 +470,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/52.jpg" alt=""> 
+                            <img src="images/all/52.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/6.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
@@ -533,9 +533,9 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                   
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end--> 
+            <!-- gallery-item  end-->
             <!-- gallery-item  -->
             <div class="gallery-item hotels">
                 <!-- listing-item  -->
@@ -544,7 +544,7 @@
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                             <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                            <img src="images/all/62.jpg" alt=""> 
+                            <img src="images/all/62.jpg" alt="">
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/4.jpg" alt=""></a>
                                 <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
@@ -607,14 +607,14 @@
                         </div>
                     </article>
                 </div>
-                <!-- listing-item end -->                                           
+                <!-- listing-item end -->
             </div>
-            <!-- gallery-item  end-->                                                                                                                        
+            <!-- gallery-item  end-->
         </div>
-        
+
     </div>
 </section>
-<!--section end-->                                        					
+<!--section end-->
 
 22
 
@@ -675,92 +675,29 @@
         </div>
     </div>
 </section>
-<!--section end--> 
+<!--section end-->
 
 33
 <!--section -->
 <section   class="gray-bg hidden-section particles-wrapper">
     <div class="container">
         <div class="section-title">
-            <h2>Explore Best Cities</h2>
-            <div class="section-subtitle">Catalog of Categories</div>
+            <h2>Lugares a Conhecer</h2>
+            <div class="section-subtitle">Angola 7 Maravilhas</div>
             <span class="section-separator"></span>
             <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus.</p>
         </div>
-        <div class="listing-item-grid_container fl-wrap">
-            <div class="row">
-                <!--  listing-item-grid  -->
-                <div class="col-sm-4">
-                    <div class="listing-item-grid">
-                        <div class="bg"  data-bg="images/all/56.jpg"></div>
-                        <div class="d-gr-sec"></div>
-                        <div class="listing-counter color2-bg"><span>16 </span> Locations</div>
-                        <div class="listing-item-grid_title">
-                            <h3><a href="listing.html">New York</a></h3>
-                            <p>Constant care and attention to the patients makes good record</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  listing-item-grid end  -->
-                <!--  listing-item-grid  -->
-                <div class="col-sm-4">
-                    <div class="listing-item-grid">
-                        <div class="bg"  data-bg="images/all/57.jpg"></div>
-                        <div class="d-gr-sec"></div>
-                        <div class="listing-counter color2-bg"><span>22 </span> Locations</div>
-                        <div class="listing-item-grid_title">
-                            <h3><a href="listing.html">Paris</a></h3>
-                            <p>Constant care and attention to the patients makes good record</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  listing-item-grid end  -->                                
-                <!--  listing-item-grid  -->
-                <div class="col-sm-4">
-                    <div class="listing-item-grid">
-                        <div class="bg"  data-bg="images/all/58.jpg"></div>
-                        <div class="d-gr-sec"></div>
-                        <div class="listing-counter color2-bg"><span>9 </span> Locations</div>
-                        <div class="listing-item-grid_title">
-                            <h3><a href="listing.html">Moscow</a></h3>
-                            <p>Constant care and attention to the patients makes good record</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  listing-item-grid end  -->
-                <!--  listing-item-grid  -->
-                <div class="col-sm-4">
-                    <div class="listing-item-grid">
-                        <div class="bg"  data-bg="images/all/60.jpg"></div>
-                        <div class="d-gr-sec"></div>
-                        <div class="listing-counter color2-bg"><span>12 </span> Locations</div>
-                        <div class="listing-item-grid_title">
-                            <h3><a href="listing.html">Rome</a></h3>
-                            <p>Constant care and attention to the patients makes good record</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  listing-item-grid end  -->
-                <!--  listing-item-grid  -->
-                <div class="col-sm-8">
-                    <div class="listing-item-grid">
-                        <div class="bg"  data-bg="images/all/59.jpg"></div>
-                        <div class="d-gr-sec"></div>
-                        <div class="listing-counter color2-bg"><span>33 </span> Locations</div>
-                        <div class="listing-item-grid_title">
-                            <h3><a href="listing.html">London</a></h3>
-                            <p>Constant care and attention to the patients makes good record</p>
-                        </div>
-                    </div>
-                </div>
-                <!--  listing-item-grid end  -->                                                                                               
-            </div>
-        </div>
-        <a href="listing.html" class="btn dec_btn   color2-bg">View All Cities<i class="fal fa-arrow-alt-left"></i></a>
-    </div>
-                            
-</section>
-<!--  section  --> 
 
+        <div id="app">
+            <locais_cl></locais_cl>
+        </div>
+    </div>
+
+</section>
+<!--  section  -->
+
+<script src="{{ asset('js/app.js') }}"></script>
 
 @endsection
+
+

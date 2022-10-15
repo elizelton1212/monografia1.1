@@ -21,6 +21,9 @@ Route::put('/categoria/{id}',[App\Http\Controllers\CategoriaController::class,'a
 Route::delete('/categoria/{id}',[App\Http\Controllers\CategoriaController::class,'apagar'])->name('categoria.apagar');
 Route::post('/novo',[App\Http\Controllers\CategoriaController::class, 'registar'])->name('registar');
 Route::get('/admin',[App\Http\Controllers\teste::class, 'admin']);
+Route::get('/Rota',[App\Http\Controllers\teste::class, 'texteVue'])->name('Rota');
+
+
 
 Route::post('/novo',[App\Http\Controllers\CategoriaController::class, 'registar'])->name('registar');
 
@@ -50,3 +53,6 @@ Route::get('/consultarDistritos/{id}', [App\Http\Controllers\MunicipioController
 Route::get('/consultarComunas/{id}', [App\Http\Controllers\MunicipioController::class, 'comunas']);
 Route::get('/categorias', [App\Http\Controllers\CategoriaController::class, 'categorias']);
 Route::post('/cadastrarLocal', [App\Http\Controllers\LocalController::class, 'store']);
+Route::get('/locais', [App\Http\Controllers\LocalController::class, 'listar']);
+Route::get('/ret_Provincia/{id}', [App\Http\Controllers\LocalController::class, 'ret_Provincia']);
+

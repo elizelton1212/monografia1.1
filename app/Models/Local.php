@@ -10,5 +10,10 @@ class Local extends Model
     use HasFactory;
 
     protected $fillable =['nome','telefone','email','site','nif','categoria_id','localizacao_id','categoria_id'];
+
+    public function CategoriaLocal()
+    {
+        return $this->hasOne(Categoria::class);
+    }
 }
 //dd

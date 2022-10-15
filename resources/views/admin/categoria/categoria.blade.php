@@ -1,6 +1,8 @@
 @extends('layouts.admin')
 
 @section('conteudo')
+
+
     <div class="card-body">
         <div style="align: right">
             <!-- Button trigger modal -->
@@ -35,11 +37,6 @@
 
                 <td>
                     <button class="btn btn-info" data-toggle="modal" data-target="#modelId1" id=""><i class="icon-pencil"></i></button>
-                    @php
-                        /*$nomes = array("A");
-                        array_push($nomes, "B");
-                        array_push($nomes, "C");*/
-                       @endphp
 
                     <!-- Modal Editar-->
             <div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" style="color: black">
@@ -81,7 +78,6 @@
         </div>
       </div>
 
-
       <!-- Modal Criar Categoria-->
       <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -108,13 +104,16 @@
       </div>
 </form>
 
-      <script>
-        $('#exampleModal').on('show.bs.modal', event => {
+
+
+<script src="{{ asset('js/app.js') }}"></script>
+ <script>
+     /*   $('#exampleModal').on('show.bs.modal', event => {
           var button = $(event.relatedTarget);
           var modal = $(this);
           // Use above variables to manipulate the DOM
 
-        });
+        }); */
       </script>
 
 @stop

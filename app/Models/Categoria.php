@@ -11,4 +11,9 @@ class Categoria extends Model
     protected $table = 'categorias';
 
     protected $fillable = ['nome'];
+
+    public function CategoriaLocal()
+    {
+        return $this->hasOne(Local::class);
+    }
 }

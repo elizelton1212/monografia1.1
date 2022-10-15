@@ -26,7 +26,8 @@ Vue.component('cadastrar-disticto', require('./components/CadastrarDistricto.vue
 Vue.component('cadastrar-comuna', require('./components/CadastrarComuna.vue').default);
 Vue.component('cadastrar-local', require('./components/Local/CadastrarLocal.vue').default);
 Vue.component('example-componente', require('./components/ExampleComponent.vue').default);
-
+Vue.component('seila', require('./components/texte.vue').default);
+Vue.component('locais_cl', require('./components/Locais_Cl.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
